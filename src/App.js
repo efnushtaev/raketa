@@ -27,6 +27,6 @@ const App = (props) => {
     {isLoading && <div className="loading"><i>...Loading...</i></div>}
     <DataList props={restProps} />
   </StyledWrapper>
-}
+};
 
 export default App;

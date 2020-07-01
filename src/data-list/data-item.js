@@ -25,6 +25,6 @@ const DataItem = ({itemData}) => {
     <p className={'body'}>{body}</p>
     <hr/>
   </StyledWrapper>
-}
+};
 
-export default DataItem
+export default DataItem;

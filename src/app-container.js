@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import axios from 'axios'
+import axios from 'axios';
 import App from './app';
 
 const AppContainer = () => {
@@ -10,7 +10,7 @@ const AppContainer = () => {
   const handleFilterChange = (e) => {
     e.preventDefault();
     setFilter(e.target.value);
-  }
+  };
 
   useEffect(() => {
     const dataFetching = async () => {
@@ -33,7 +33,7 @@ const AppContainer = () => {
       setLoading(false);
     }
     dataFetching()
-  }, [])
+  }, []);
 
   return <App 
     dataList={dataList}
@@ -41,6 +41,6 @@ const AppContainer = () => {
     isLoading={isLoading}
     onFilterChange={handleFilterChange}
   />
-}
+};
 
 export default AppContainer;
